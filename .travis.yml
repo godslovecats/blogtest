@@ -1,29 +1,27 @@
 language: go
-install:
-- go get github.com/InkProject/ink
-- ink build
 
+# S: Build Lifecycle
+install:
+  - go get github.com/InkProject/ink
+  # - ink build $GOPATH/src/github.com/InkProject/ink/template
+  - ink build
+# before_script
+
+script:
+  - cd ./docs
+  - git init
+  - git config user.name "godslovecats"
+  - git config user.email "marifry@yandex.ru"
+  - git add .
+  - git commit -m "update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+
+# after-script:
+# E: Build Lifecycle
 
 branches:
-only:
-- master
+  only:
+    - master
 env:
   global:
-  - GH_REF: https://github.com/godslovecats/blogtest
-
-site:
-    title: "Decembrist blog"
-    subtitle: "blog"
-    limit: 10
-    theme: theme
-    lang: ru
-    url: "https://godslovecats.github.io/blogtest/"
-    comment: godslovecats
-    logo: "-/images/avatar.png"
-    root: "/blogtest"
-
-build:
-    output: "docs"
-    port: 8000
-    copy:
-        - "source/images"
+    - GH_REF: github.com/godslovecats/blogtest
