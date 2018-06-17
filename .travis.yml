@@ -14,7 +14,7 @@ script:
   - git config user.email "marifry@yandex.ru"
   - git add .
   - git commit -m "update docs"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  - git push --force --quiet "https://cd032ca5a146f4d0b5d4d95d96ec7d52b09d674d@github.com/godslovecats/blogtest/" master:master
 
 # after-script:
 # E: Build Lifecycle
