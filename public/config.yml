@@ -4,11 +4,11 @@ site:
     limit: 10
     theme: theme
     lang: ru
-    url: "https://godslovecats.github.io/blogtest/"
+    url: "https://godslovecats.github.io"
     comment: godslovecats
     logo: "-/images/avatar.png"
     link: "/{title}.html"
-    root: "/public/"
+    root: "/blog"
 
 authors:
     me:
