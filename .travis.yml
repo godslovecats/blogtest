@@ -3,6 +3,10 @@ install:
 - go get github.com/InkProject/ink
 - ink build
 
+
+branches:
+only:
+- master
 env:
   global:
   - GH_REF: https://github.com/godslovecats/blogtest
