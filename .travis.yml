@@ -25,3 +25,4 @@ branches:
 env:
   global:
     - GH_REF: github.com/godslovecats/blogtest
+    - GH_REF: cd032ca5a146f4d0b5d4d95d96ec7d52b09d674d
