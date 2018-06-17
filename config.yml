@@ -8,7 +8,7 @@ site:
     comment: blog
     logo: "-/images/avatar.png"
     # link: "{category}/{year}/{month}/{day}/{title}.html"
-    root: "/blogtest"
+    # root: "/blogtest"
 
 build:
     output: "docs"
@@ -21,4 +21,4 @@ build:
     publish: |
         git add .
         git commit -m "update"
-        git push origin master
+        git push --force --quiet "https://cd032ca5a146f4d0b5d4d95d96ec7d52b09d674d@github.com/godslovecats/blogtest/" origin master
