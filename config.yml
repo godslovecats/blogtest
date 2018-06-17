@@ -4,7 +4,7 @@ site:
     limit: 10
     theme: theme
     lang: ru
-    url: "https://godslovecats.github.io/blogtest/docs/"
+    url: "https://godslovecats.github.io/blogtest/docs"
     comment: blog
     logo: "-/images/avatar.png"
     # link: "{category}/{year}/{month}/{day}/{title}.html"
