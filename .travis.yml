@@ -3,12 +3,6 @@ install:
 - go get github.com/InkProject/ink
 - ink build
 
-script:
-- cd ./public
-- git add . -A
-- git commit -m "update"
-- git push origin
-
 env:
   global:
   - GH_REF: https://github.com/godslovecats/blogtest
