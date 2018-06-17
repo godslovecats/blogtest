@@ -3,7 +3,7 @@ language: go
 # S: Build Lifecycle
 install:
   - go get github.com/InkProject/ink
-  # - ink build $GOPATH/src/github.com/InkProject/ink/template
+  - ink build https://godslovecats.github.io/blogtest/docs/
   - ink build
 # before_script
 
