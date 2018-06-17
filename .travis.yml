@@ -11,7 +11,7 @@ script:
 
 env:
   global:
-  - GH_REF: github.com/godslovecats/blogtest
+  - GH_REF: https://github.com/godslovecats/blogtest
 
 site:
     title: "Decembrist blog"
